@@ -25,6 +25,9 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+on early-fs
+    start vold
+    
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
@@ -36,8 +39,7 @@ on fs
     chown system system /dev/ion
     install_keyring
 
-on early-fs
-    start vold
+
 
 # Separate copy needed to use /sbin/linker64 instead of /system/bin/linker64
 service sbinqseecomd /sbin/qseecomd
