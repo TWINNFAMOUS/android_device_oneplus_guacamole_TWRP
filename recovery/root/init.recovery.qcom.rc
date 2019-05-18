@@ -116,7 +116,14 @@ service time_daemon /sbin/time_daemon
 service ldconfigtxt /sbin/touch /sbin/ld.config.txt
     oneshot
     seclabel u:r:recovery:s0
-
+    
+on late-fs
+    # Wait for keymaster
+    exec_start wait_for_keymaster
+    
+    # Mount RW partitions which need run fsck
+    mount_all /vendor/etc/fstab.${ro.boot.hardware.platform} --late
+    
 on boot
 	export LD_CONFIG_FILE /sbin/ld.config.txt
     setprop sys.usb.config adb
