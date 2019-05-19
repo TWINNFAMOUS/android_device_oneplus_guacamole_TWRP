@@ -263,7 +263,161 @@ It was released in May 2019.
 (bootloader) max-download-size:805306368
 (bootloader) kernel:uefi
 
-
+1|OnePlus7ProTMO:/ $ cat /proc/filesystems
+nodev	sysfs
+nodev	rootfs
+nodev	ramfs
+nodev	bdev
+nodev	proc
+nodev	cpuset
+nodev	cgroup
+nodev	cgroup2
+nodev	tmpfs
+nodev	configfs
+nodev	debugfs
+nodev	tracefs
+nodev	sockfs
+nodev	dax
+nodev	bpf
+nodev	pipefs
+nodev	devpts
+	ext3
+	ext2
+	ext4
+	vfat
+	msdos
+nodev	ecryptfs
+nodev	sdcardfs
+	ntfs
+	fuseblk
+nodev	fuse
+nodev	fusectl
+	f2fs
+nodev	pstore
+	exfat
+nodev	selinuxfs
+nodev	functionfs
+OnePlus7ProTMO:/ $ cd dev/block/platform/soc/1d84000.ufshc/by-name
+OnePlus7ProTMO:/dev/block/platform/soc/1d84000.ufshc/by-name $ ls -al
+total 0
+drwxr-xr-x 2 root root 2360 1970-01-02 10:47 .
+drwxr-xr-x 3 root root 2500 1970-01-02 10:47 ..
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 ALIGN_TO_128K_1 -> /dev/block/sdd1
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 ALIGN_TO_128K_2 -> /dev/block/sdf1
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 LOGO_a -> /dev/block/sde22
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 LOGO_b -> /dev/block/sde49
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 abl_a -> /dev/block/sde8
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 abl_b -> /dev/block/sde36
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 aging -> /dev/block/sde56
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 aging_mod -> /dev/block/sde57
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 aop_a -> /dev/block/sde1
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 aop_b -> /dev/block/sde29
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 apdp -> /dev/block/sde61
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 bluetooth_a -> /dev/block/sde5
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 bluetooth_b -> /dev/block/sde33
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 boot_a -> /dev/block/sde11
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 boot_b -> /dev/block/sde39
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 catecontentfv -> /dev/block/sde74
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 catefv -> /dev/block/sde73
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 cateloader -> /dev/block/sde68
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 cdt -> /dev/block/sdd2
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 cmnlib64_a -> /dev/block/sde13
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 cmnlib64_b -> /dev/block/sde41
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 cmnlib_a -> /dev/block/sde12
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 cmnlib_b -> /dev/block/sde40
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 config -> /dev/block/sda12
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 core_nhlos_a -> /dev/block/sde21
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 ddr -> /dev/block/sdd3
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 devcfg_a -> /dev/block/sde14
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 devcfg_b -> /dev/block/sde42
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 devinfo -> /dev/block/sde59
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 dip -> /dev/block/sde60
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 dsp_a -> /dev/block/sde9
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 dsp_b -> /dev/block/sde37
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 dtbo_a -> /dev/block/sde18
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 dtbo_b -> /dev/block/sde46
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 frp -> /dev/block/sda6
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 fsc -> /dev/block/sdf5
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 fsg -> /dev/block/sdf4
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 fw_ufs1_a -> /dev/block/sde23
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 fw_ufs1_b -> /dev/block/sde50
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 fw_ufs2_a -> /dev/block/sde24
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 fw_ufs2_b -> /dev/block/sde51
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 fw_ufs3_a -> /dev/block/sde25
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 fw_ufs3_b -> /dev/block/sde52
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 fw_ufs4_a -> /dev/block/sde26
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 fw_ufs4_b -> /dev/block/sde53
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 fw_ufs5_a -> /dev/block/sde27
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 fw_ufs5_b -> /dev/block/sde54
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 hyp_a -> /dev/block/sde3
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 hyp_b -> /dev/block/sde31
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 imagefv_a -> /dev/block/sde20
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 imagefv_b -> /dev/block/sde48
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 keymaster_a -> /dev/block/sde10
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 keymaster_b -> /dev/block/sde38
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 keystore -> /dev/block/sda5
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 limits -> /dev/block/sde65
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 logdump -> /dev/block/sde69
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 logfs -> /dev/block/sde67
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 mdm1m9kefs1 -> /dev/block/sdf7
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 mdm1m9kefs2 -> /dev/block/sdf8
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 mdm1m9kefs3 -> /dev/block/sdf6
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 mdm1m9kefsc -> /dev/block/sdf9
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 mdm1oemnvbktmp -> /dev/block/sde79
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 mdm_oem_dycnvbk -> /dev/block/sda10
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 mdm_oem_stanvbk -> /dev/block/sda11
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 mdmddr -> /dev/block/sdd4
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 mdtp_a -> /dev/block/sde7
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 mdtp_b -> /dev/block/sde35
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 mdtpsecapp_a -> /dev/block/sde6
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 mdtpsecapp_b -> /dev/block/sde34
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 metadata -> /dev/block/sda17
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 misc -> /dev/block/sda3
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 modem_a -> /dev/block/sde4
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 modem_b -> /dev/block/sde32
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 modemst1 -> /dev/block/sdf2
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 modemst2 -> /dev/block/sdf3
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 msadp -> /dev/block/sde62
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 multiimgoem_a -> /dev/block/sde28
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 multiimgoem_b -> /dev/block/sde55
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 odm_a -> /dev/block/sda15
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 odm_b -> /dev/block/sda16
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 oem_dycnvbk -> /dev/block/sda8
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 oem_stanvbk -> /dev/block/sda9
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 op1 -> /dev/block/sde58
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 op2 -> /dev/block/sda7
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 param -> /dev/block/sda4
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 persist -> /dev/block/sda2
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 qupfw_a -> /dev/block/sde15
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 qupfw_b -> /dev/block/sde43
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 rawdump -> /dev/block/sda18
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 reserve1 -> /dev/block/sde75
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 reserve2 -> /dev/block/sde76
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 reserve3 -> /dev/block/sde77
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 reserve4 -> /dev/block/sde78
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 secdata -> /dev/block/sde72
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 splash -> /dev/block/sde64
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 spunvm -> /dev/block/sde63
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 ssd -> /dev/block/sda1
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 storsec_a -> /dev/block/sde70
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 storsec_b -> /dev/block/sde80
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 system_a -> /dev/block/sda13
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 system_b -> /dev/block/sda14
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 toolsfv -> /dev/block/sde66
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 tz_a -> /dev/block/sde2
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 tz_b -> /dev/block/sde30
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 uefisecapp_a -> /dev/block/sde19
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 uefisecapp_b -> /dev/block/sde47
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 uefivarstore -> /dev/block/sde71
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 userdata -> /dev/block/sda19
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 vbmeta_a -> /dev/block/sde17
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 vbmeta_b -> /dev/block/sde45
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 vendor_a -> /dev/block/sde16
+lrwxrwxrwx 1 root root   16 1970-01-02 10:47 vendor_b -> /dev/block/sde44
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 xbl_a -> /dev/block/sdb1
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 xbl_b -> /dev/block/sdc1
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 xbl_config_a -> /dev/block/sdb2
+lrwxrwxrwx 1 root root   15 1970-01-02 10:47 xbl_config_b -> /dev/block/sdc2
 
 
 ## Compile
