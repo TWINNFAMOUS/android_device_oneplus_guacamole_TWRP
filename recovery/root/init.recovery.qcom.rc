@@ -104,6 +104,12 @@ service logd /sbin/logd
     disabled
     seclabel u:r:recovery:s0
 
+service wait_for_keymaster /system/bin/wait_for_keymaster
+    user root
+    group root system
+    priority -20
+    ioprio rt 0
+
 service time_daemon /sbin/time_daemon
     user root
     group root
