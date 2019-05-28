@@ -37,7 +37,7 @@
 /vendor		ext4	/dev/block/bootdevice/by-name/vendor					       flags=slotselect;display="Vendor";backup=1;wipeingui
 /vendor_image	emmc	/dev/block/bootdevice/by-name/vendor					   flags=slotselect
 /metadata	ext4	/dev/block/bootdevice/by-name/metadata 					
-/data   ext4    /dev/block/bootdevice/by-name/userdata               flags=latemount,wait,check,fileencryption=ice,wrappedkey,keydirectory=/metadata/vold/metadata_encryption,quota,reservedsize=512M
+/data           ext4    /dev/block/bootdevice/by-name/userdata               flags=fileencryption=ice,wrappedkey,keydirectory=/metadata/vold/metadata_encryption,quota,reservedsize=512M
 /firmware	vfat	/dev/block/bootdevice/by-name/modem					         flags=slotselect;display="Firmware";mounttodecrypt;fsflags=ro
 /misc		emmc	  /dev/block/bootdevice/by-name/misc
 /vendor/firmware_mnt		emmc	/dev/block/bootdevice/by-name/modem					flags=slotselect;backup=1;display="Modem"
