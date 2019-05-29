@@ -3,267 +3,153 @@
 The OnePlus 7 Pro (codenamed _"guacamole"_) is a flagship smartphone from OnePlus.
 It was released in May 2019.
 # device info
-(bootloader) hw-revision:20002
-(bootloader) unlocked:no
-(bootloader) off-mode-charge:1
-(bootloader) charger-screen-enabled:1
-(bootloader) battery-soc-ok:yes
-(bootloader) battery-voltage:4206
-(bootloader) version-baseband:
-(bootloader) version-bootloader:
-(bootloader) erase-block-size: 0x1000
-(bootloader) logical-block-size: 0x1000
-(bootloader) variant:SDM UFS
-(bootloader) partition-type:mdm1m9kefsc:raw
-(bootloader) partition-size:mdm1m9kefsc: 0x1000
-(bootloader) partition-type:mdm1m9kefs2:raw
-(bootloader) partition-size:mdm1m9kefs2: 0x100000
-(bootloader) partition-type:mdm1m9kefs1:raw
-(bootloader) partition-size:mdm1m9kefs1: 0x100000
-(bootloader) partition-type:mdm1m9kefs3:raw
-(bootloader) partition-size:mdm1m9kefs3: 0x100000
-(bootloader) partition-type:fsc:raw
-(bootloader) partition-size:fsc: 0x20000
-(bootloader) partition-type:fsg:raw
-(bootloader) partition-size:fsg: 0x200000
-(bootloader) partition-type:modemst2:raw
-(bootloader) partition-size:modemst2: 0x200000
-(bootloader) partition-type:modemst1:raw
-(bootloader) partition-size:modemst1: 0x200000
-(bootloader) partition-type:ALIGN_TO_128K_2:raw
-(bootloader) partition-size:ALIGN_TO_128K_2: 0x1A000
-(bootloader) partition-type:storsec_b:raw
-(bootloader) partition-size:storsec_b: 0x20000
-(bootloader) partition-type:mdm1oemnvbktmp:raw
-(bootloader) partition-size:mdm1oemnvbktmp: 0x100000
-(bootloader) partition-type:reserve4:raw
-(bootloader) partition-size:reserve4: 0xFD0000
-(bootloader) partition-type:reserve3:raw
-(bootloader) partition-size:reserve3: 0xFD0000
-(bootloader) partition-type:reserve2:raw
-(bootloader) partition-size:reserve2: 0xFD0000
-(bootloader) partition-type:reserve1:raw
-(bootloader) partition-size:reserve1: 0x7E8000
-(bootloader) partition-type:catecontentfv:raw
-(bootloader) partition-size:catecontentfv: 0x100000
-(bootloader) partition-type:catefv:raw
-(bootloader) partition-size:catefv: 0x80000
-(bootloader) partition-type:secdata:raw
-(bootloader) partition-size:secdata: 0x7000
-(bootloader) partition-type:uefivarstore:raw
-(bootloader) partition-size:uefivarstore: 0x80000
-(bootloader) partition-type:storsec_a:raw
-(bootloader) partition-size:storsec_a: 0x20000
-(bootloader) partition-type:logdump:raw
-(bootloader) partition-size:logdump: 0x4000000
-(bootloader) partition-type:cateloader:raw
-(bootloader) partition-size:cateloader: 0x200000
-(bootloader) partition-type:logfs:raw
-(bootloader) partition-size:logfs: 0x800000
-(bootloader) partition-type:toolsfv:raw
-(bootloader) partition-size:toolsfv: 0x100000
-(bootloader) partition-type:limits:raw
-(bootloader) partition-size:limits: 0x1000
-(bootloader) partition-type:splash:raw
-(bootloader) partition-size:splash: 0x20A4000
-(bootloader) partition-type:spunvm:raw
-(bootloader) partition-size:spunvm: 0x800000
-(bootloader) partition-type:msadp:raw
-(bootloader) partition-size:msadp: 0x40000
-(bootloader) partition-type:apdp:raw
-(bootloader) partition-size:apdp: 0x40000
-(bootloader) partition-type:dip:raw
-(bootloader) partition-size:dip: 0x100000
-(bootloader) partition-type:devinfo:raw
-(bootloader) partition-size:devinfo: 0x1000
-(bootloader) partition-type:op1:raw
-(bootloader) partition-size:op1: 0x12C00000
-(bootloader) partition-type:aging_mod:raw
-(bootloader) partition-size:aging_mod: 0x2000000
-(bootloader) partition-type:aging:raw
-(bootloader) partition-size:aging: 0x4000000
-(bootloader) partition-type:multiimgoem_b:raw
-(bootloader) partition-size:multiimgoem_b: 0x8000
-(bootloader) partition-type:fw_ufs5_b:raw
-(bootloader) partition-size:fw_ufs5_b: 0x200000
-(bootloader) partition-type:fw_ufs4_b:raw
-(bootloader) partition-size:fw_ufs4_b: 0x200000
-(bootloader) partition-type:fw_ufs3_b:raw
-(bootloader) partition-size:fw_ufs3_b: 0x200000
-(bootloader) partition-type:fw_ufs2_b:raw
-(bootloader) partition-size:fw_ufs2_b: 0x200000
-(bootloader) partition-type:fw_ufs1_b:raw
-(bootloader) partition-size:fw_ufs1_b: 0x200000
-(bootloader) partition-type:LOGO_b:raw
-(bootloader) partition-size:LOGO_b: 0x1000000
-(bootloader) partition-type:imagefv_b:raw
-(bootloader) partition-size:imagefv_b: 0x200000
-(bootloader) partition-type:uefisecapp_b:raw
-(bootloader) partition-size:uefisecapp_b: 0x200000
-(bootloader) partition-type:dtbo_b:raw
-(bootloader) partition-size:dtbo_b: 0x1800000
-(bootloader) partition-type:vbmeta_b:raw
-(bootloader) partition-size:vbmeta_b: 0x10000
-(bootloader) partition-type:vendor_b:raw
-(bootloader) partition-size:vendor_b: 0x40000000
-(bootloader) partition-type:qupfw_b:raw
-(bootloader) partition-size:qupfw_b: 0x14000
-(bootloader) partition-type:devcfg_b:raw
-(bootloader) partition-size:devcfg_b: 0x20000
-(bootloader) partition-type:cmnlib64_b:raw
-(bootloader) partition-size:cmnlib64_b: 0x80000
-(bootloader) partition-type:cmnlib_b:raw
-(bootloader) partition-size:cmnlib_b: 0x80000
-(bootloader) partition-type:boot_b:raw
-(bootloader) partition-size:boot_b: 0x6000000
-(bootloader) partition-type:keymaster_b:raw
-(bootloader) partition-size:keymaster_b: 0x80000
-(bootloader) partition-type:dsp_b:raw
-(bootloader) partition-size:dsp_b: 0x4000000
-(bootloader) partition-type:abl_b:raw
-(bootloader) partition-size:abl_b: 0x800000
-(bootloader) partition-type:mdtp_b:raw
-(bootloader) partition-size:mdtp_b: 0x2000000
-(bootloader) partition-type:mdtpsecapp_b:raw
-(bootloader) partition-size:mdtpsecapp_b: 0x400000
-(bootloader) partition-type:bluetooth_b:raw
-(bootloader) partition-size:bluetooth_b: 0x100000
-(bootloader) partition-type:modem_b:raw
-(bootloader) partition-size:modem_b: 0x12C00000
-(bootloader) partition-type:hyp_b:raw
-(bootloader) partition-size:hyp_b: 0x800000
-(bootloader) partition-type:tz_b:raw
-(bootloader) partition-size:tz_b: 0x400000
-(bootloader) partition-type:aop_b:raw
-(bootloader) partition-size:aop_b: 0x80000
-(bootloader) partition-type:multiimgoem_a:raw
-(bootloader) partition-size:multiimgoem_a: 0x8000
-(bootloader) partition-type:fw_ufs5_a:raw
-(bootloader) partition-size:fw_ufs5_a: 0x200000
-(bootloader) partition-type:fw_ufs4_a:raw
-(bootloader) partition-size:fw_ufs4_a: 0x200000
-(bootloader) partition-type:fw_ufs3_a:raw
-(bootloader) partition-size:fw_ufs3_a: 0x200000
-(bootloader) partition-type:fw_ufs2_a:raw
-(bootloader) partition-size:fw_ufs2_a: 0x200000
-(bootloader) partition-type:fw_ufs1_a:raw
-(bootloader) partition-size:fw_ufs1_a: 0x200000
-(bootloader) partition-type:LOGO_a:raw
-(bootloader) partition-size:LOGO_a: 0x1000000
-(bootloader) partition-type:core_nhlos_a:raw
-(bootloader) partition-size:core_nhlos_a: 0xAA00000
-(bootloader) partition-type:imagefv_a:raw
-(bootloader) partition-size:imagefv_a: 0x200000
-(bootloader) partition-type:uefisecapp_a:raw
-(bootloader) partition-size:uefisecapp_a: 0x200000
-(bootloader) partition-type:dtbo_a:raw
-(bootloader) partition-size:dtbo_a: 0x1800000
-(bootloader) partition-type:vbmeta_a:raw
-(bootloader) partition-size:vbmeta_a: 0x10000
-(bootloader) partition-type:vendor_a:raw
-(bootloader) partition-size:vendor_a: 0x40000000
-(bootloader) partition-type:qupfw_a:raw
-(bootloader) partition-size:qupfw_a: 0x14000
-(bootloader) partition-type:devcfg_a:raw
-(bootloader) partition-size:devcfg_a: 0x20000
-(bootloader) partition-type:cmnlib64_a:raw
-(bootloader) partition-size:cmnlib64_a: 0x80000
-(bootloader) partition-type:cmnlib_a:raw
-(bootloader) partition-size:cmnlib_a: 0x80000
-(bootloader) partition-type:boot_a:raw
-(bootloader) partition-size:boot_a: 0x6000000
-(bootloader) partition-type:keymaster_a:raw
-(bootloader) partition-size:keymaster_a: 0x80000
-(bootloader) partition-type:dsp_a:raw
-(bootloader) partition-size:dsp_a: 0x4000000
-(bootloader) partition-type:abl_a:raw
-(bootloader) partition-size:abl_a: 0x800000
-(bootloader) partition-type:mdtp_a:raw
-(bootloader) partition-size:mdtp_a: 0x2000000
-(bootloader) partition-type:mdtpsecapp_a:raw
-(bootloader) partition-size:mdtpsecapp_a: 0x400000
-(bootloader) partition-type:bluetooth_a:raw
-(bootloader) partition-size:bluetooth_a: 0x100000
-(bootloader) partition-type:modem_a:raw
-(bootloader) partition-size:modem_a: 0x12C00000
-(bootloader) partition-type:hyp_a:raw
-(bootloader) partition-size:hyp_a: 0x800000
-(bootloader) partition-type:tz_a:raw
-(bootloader) partition-size:tz_a: 0x400000
-(bootloader) partition-type:aop_a:raw
-(bootloader) partition-size:aop_a: 0x80000
-(bootloader) partition-type:mdmddr:raw
-(bootloader) partition-size:mdmddr: 0x100000
-(bootloader) partition-type:ddr:raw
-(bootloader) partition-size:ddr: 0x100000
-(bootloader) partition-type:cdt:raw
-(bootloader) partition-size:cdt: 0x20000
-(bootloader) partition-type:ALIGN_TO_128K_1:raw
-(bootloader) partition-size:ALIGN_TO_128K_1: 0x1A000
-(bootloader) partition-type:xbl_config_b:raw
-(bootloader) partition-size:xbl_config_b: 0x20000
-(bootloader) partition-type:xbl_b:raw
-(bootloader) partition-size:xbl_b: 0x380000
-(bootloader) partition-type:xbl_config_a:raw
-(bootloader) partition-size:xbl_config_a: 0x20000
-(bootloader) partition-type:xbl_a:raw
-(bootloader) partition-size:xbl_a: 0x380000
-(bootloader) partition-type:userdata:ext4
-(bootloader) partition-size:userdata: 0x38B5673000
-(bootloader) partition-type:rawdump:raw
-(bootloader) partition-size:rawdump: 0x8000000
-(bootloader) partition-type:metadata:raw
-(bootloader) partition-size:metadata: 0x1000000
-(bootloader) partition-type:odm_b:raw
-(bootloader) partition-size:odm_b: 0x6400000
-(bootloader) partition-type:odm_a:raw
-(bootloader) partition-size:odm_a: 0x6400000
-(bootloader) partition-type:system_b:ext4
-(bootloader) partition-size:system_b: 0xD9000000
-(bootloader) partition-type:system_a:ext4
-(bootloader) partition-size:system_a: 0xD9000000
-(bootloader) partition-type:config:raw
-(bootloader) partition-size:config: 0x80000
-(bootloader) partition-type:mdm_oem_stanvbk:raw
-(bootloader) partition-size:mdm_oem_stanvbk: 0x100000
-(bootloader) partition-type:mdm_oem_dycnvbk:raw
-(bootloader) partition-size:mdm_oem_dycnvbk: 0x100000
-(bootloader) partition-type:oem_stanvbk:raw
-(bootloader) partition-size:oem_stanvbk: 0xA00000
-(bootloader) partition-type:oem_dycnvbk:raw
-(bootloader) partition-size:oem_dycnvbk: 0xA00000
-(bootloader) partition-type:op2:raw
-(bootloader) partition-size:op2: 0x10000000
-(bootloader) partition-type:frp:raw
-(bootloader) partition-size:frp: 0x80000
-(bootloader) partition-type:keystore:raw
-(bootloader) partition-size:keystore: 0x80000
-(bootloader) partition-type:param:raw
-(bootloader) partition-size:param: 0x100000
-(bootloader) partition-type:misc:raw
-(bootloader) partition-size:misc: 0x100000
-(bootloader) partition-type:persist:raw
-(bootloader) partition-size:persist: 0x2000000
-(bootloader) partition-type:ssd:raw
-(bootloader) partition-size:ssd: 0x2000
-(bootloader) has-slot:modem:yes
-(bootloader) has-slot:system:yes
-(bootloader) current-slot:b
-(bootloader) has-slot:boot:yes
-(bootloader) slot-retry-count:b:7
-(bootloader) slot-unbootable:b:no
-(bootloader) slot-successful:b:yes
-(bootloader) slot-retry-count:a:7
-(bootloader) slot-unbootable:a:no
-(bootloader) slot-successful:a:yes
-(bootloader) slot-count:2
-(bootloader) secure:yes
-(bootloader) serialno:########
-(bootloader) product:msmnile
-(bootloader) max-download-size:805306368
-(bootloader) kernel:uefi
+#cat /proc/partitions
+major minor  #blocks  name
 
-1|OnePlus7ProTMO:/ $ cat /proc/filesystems
+   1        0       8192 ram0
+   1        1       8192 ram1
+   1        2       8192 ram2
+   1        3       8192 ram3
+   1        4       8192 ram4
+   1        5       8192 ram5
+   1        6       8192 ram6
+   1        7       8192 ram7
+   1        8       8192 ram8
+   1        9       8192 ram9
+   1       10       8192 ram10
+   1       11       8192 ram11
+   1       12       8192 ram12
+   1       13       8192 ram13
+   1       14       8192 ram14
+   1       15       8192 ram15
+ 254        0    2150400 zram0
+   8       48      32768 sdd
+   8       49        104 sdd1
+   8       50        128 sdd2
+   8       51       1024 sdd3
+   8       52       1024 sdd4
+   8        0  245637120 sda
+   8        1          8 sda1
+   8        2      32768 sda2
+   8        3       1024 sda3
+   8        4       1024 sda4
+   8        5        512 sda5
+   8        6        512 sda6
+   8        7     262144 sda7
+   8        8      10240 sda8
+   8        9      10240 sda9
+   8       10       1024 sda10
+   8       11       1024 sda11
+   8       12        512 sda12
+   8       13    3555328 sda13
+   8       14    3555328 sda14
+   8       15     102400 sda15
+ 259        0     102400 sda16
+ 259        1      16384 sda17
+ 259        2     131072 sda18
+ 259        3  237853132 sda19
+   8       32       8192 sdc
+   8       33       3584 sdc1
+   8       34        128 sdc2
+   8       64    4194304 sde
+   8       65        512 sde1
+   8       66       4096 sde2
+   8       67       8192 sde3
+   8       68     307200 sde4
+   8       69       1024 sde5
+   8       70       4096 sde6
+   8       71      32768 sde7
+   8       72       8192 sde8
+   8       73      65536 sde9
+   8       74        512 sde10
+   8       75      98304 sde11
+   8       76        512 sde12
+   8       77        512 sde13
+   8       78        128 sde14
+   8       79         80 sde15
+ 259        4    1048576 sde16
+ 259        5         64 sde17
+ 259        6      24576 sde18
+ 259        7       2048 sde19
+ 259        8       2048 sde20
+ 259        9     174080 sde21
+ 259       10      16384 sde22
+ 259       11       2048 sde23
+ 259       12       2048 sde24
+ 259       13       2048 sde25
+ 259       14       2048 sde26
+ 259       15       2048 sde27
+ 259       16         32 sde28
+ 259       17        512 sde29
+ 259       18       4096 sde30
+ 259       19       8192 sde31
+ 259       20     307200 sde32
+ 259       21       1024 sde33
+ 259       22       4096 sde34
+ 259       23      32768 sde35
+ 259       24       8192 sde36
+ 259       25      65536 sde37
+ 259       26        512 sde38
+ 259       27      98304 sde39
+ 259       28        512 sde40
+ 259       29        512 sde41
+ 259       30        128 sde42
+ 259       31         80 sde43
+ 259       32    1048576 sde44
+ 259       33         64 sde45
+ 259       34      24576 sde46
+ 259       35       2048 sde47
+ 259       36       2048 sde48
+ 259       37      16384 sde49
+ 259       38       2048 sde50
+ 259       39       2048 sde51
+ 259       40       2048 sde52
+ 259       41       2048 sde53
+ 259       42       2048 sde54
+ 259       43         32 sde55
+ 259       44      65536 sde56
+ 259       45      32768 sde57
+ 259       46     307200 sde58
+ 259       47          4 sde59
+ 259       48       1024 sde60
+ 259       49        256 sde61
+ 259       50        256 sde62
+ 259       51       8192 sde63
+ 259       52      33424 sde64
+ 259       53          4 sde65
+ 259       54       1024 sde66
+ 259       55       8192 sde67
+ 259       56       2048 sde68
+ 259       57      65536 sde69
+ 259       58        128 sde70
+ 259       59        512 sde71
+ 259       60         28 sde72
+ 259       61        512 sde73
+ 259       62       1024 sde74
+ 259       63       8096 sde75
+ 259       64      16192 sde76
+ 259       65      16192 sde77
+ 259       66      16192 sde78
+ 259       67       1024 sde79
+ 259       68        128 sde80
+   8       80      32768 sdf
+   8       81        104 sdf1
+   8       82       2048 sdf2
+   8       83       2048 sdf3
+   8       84       2048 sdf4
+   8       85        128 sdf5
+   8       86       1024 sdf6
+   8       87       1024 sdf7
+   8       88       1024 sdf8
+   8       89          4 sdf9
+   8       16       8192 sdb
+   8       17       3584 sdb1
+   8       18        128 sdb2
+ 252        0    1031948 dm-0
+ 252        1  237853132 dm-1
+
+
+# cat /proc/filesystems
 nodev	sysfs
 nodev	rootfs
 nodev	ramfs
